@@ -29,6 +29,11 @@ body {
 	</div>
 
 	<!-- slideshow -->
+	<section>
+		<img class="mySlides" src="img_Law-firm1.jpg" style="width: 100%">
+		<img class="mySlides" src="img_Law-firm2.jpg" style="width: 100%">
+		<img class="mySlides" src="img/Law_Firms_and_Attorney.jpg" style="width: 100%">
+	</section>
 
     <!-- The Content -->
     <div class="row">
@@ -53,6 +58,28 @@ body {
 Our focus will be on personal and commercial clients at competitive and affordable rates.</p>
     	</div>
     </div>
+
+    <div class="footer">
+    	<h2></h2>
+    </div>
+
+    <script type="text/javascript">
+    	// Automatic Slideshow - change image every 3 seconds
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}
+		  x[myIndex-1].style.display = "block";
+		  setTimeout(carousel, 3000);
+		}
+    </script>
 
 
 </body>
