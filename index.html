@@ -20,13 +20,31 @@ body {
     <p>A website created by me.</p>
     </div>
 
-    <!-- navigation bar -->
-	<div class="navbar">
-		<a href="#">Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact us</a>
-		<a href="#" class="right">Founder and Manager</a>
-	</div>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Services')">Services</button>
+  <button class="tablinks" onclick="openCity(event, 'Our Team')">Our Team</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact Us')">Contact Us</button>
+</div>
+
+<!-- Tab content -->
+<div id="Service" class="tabcontent">
+  <h3>Service</h3>
+  <p>Our focus will be on personal and commercial clients at competitive and affordable rates.</p>
+</div>
+
+<div id="Our Team" class="tabcontent">
+  <h3>Our Team</h3>
+  <p>As a start-up law practice, we are “small, empowered and resourced through strong
+collegiality”. Mpho starts small and is determined the law firm will be joined by two lawyers in
+2021. These individuals are experts and consultants in Labour Law and Intellectual Property
+and Copy Right. Small firm and “fit for purpose”.</p>
+</div>
+
+<div id="Contact Us" class="tabcontent">
+  <h3>Contact Us</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
 
 	<!-- slideshow -->
 	<section>
@@ -44,9 +62,9 @@ body {
     		<h2>Services</h2>
     		<p>Maremane Attorneys practice and focus are on:
 <ul>
-	 <li><b>General Insurance law and related liabilities</b> <i>medical, pensions, marine, engineering
+	 <li><b>General Insurance law and related liabilities</b> <br><i>medical, pensions, marine, engineering
 	 and construction, public</i></li>
-	 <li> <b>International Transport Law</b> <i>Marine and Civil Aviation law, insurance, shipping and
+	 <li> <b>International Transport Law</b> <br><i>Marine and Civil Aviation law, insurance, shipping and
 	 related recoveries</i></li>
 	 <li><b>Administration of Estates & Family Law.</b></li>
 	 <li><b>Contracts</b></li>
@@ -79,6 +97,29 @@ Our focus will be on personal and commercial clients at competitive and affordab
 		  x[myIndex-1].style.display = "block";
 		  setTimeout(carousel, 3000);
 		}
+    </script>
+
+    <script type="text/javascript">
+    	function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
     </script>
 
 
