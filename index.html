@@ -134,7 +134,7 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
@@ -144,8 +144,21 @@ input[type=submit]:hover {
 .footer{
 	padding: 20px;
 	text-align: center;
-	background: #424949;
+	background-color: #424949;
+	margin: 40px;
 
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 </style>
@@ -182,7 +195,7 @@ and Copy Right. Small firm and “fit for purpose”.</p>
 <div id="Contact Us" class="tabcontent">
   <h3>Contact Us</h3>
   <p>Contact Details: Mpho Maremane<br>
-	Mobile:+27 83 784 0391<br>
+	 Mobile:+27 83 784 0391<br>
 	EMAIL:maremanempho16@gmail.com</p>
 </div>
 
@@ -196,10 +209,10 @@ and Copy Right. Small firm and “fit for purpose”.</p>
     <!-- The Content -->
     <div class="row">
     	<div class="side">
-    		<img src="img_MphoMaremane.jpg" style="width: 100%">
+    		<img src="img_MphoMaremane.jpg">
     		<h2><b>Founder And Manager</b></h2>
-    		<p>Mpho has served the insurance and financial services industry for a period of over 24 years.
-			He held positions in Commercial and Marine Claims at leading insurance companies.<br>
+    		<p><a href="https://za.linkedin.com/in/mpho-maremane-9a4323104" target="_blank"> Mpho</a> has served the insurance and financial services industry for a period of over 24 years.
+			He held positions in Commercial and Marine Claims at leading insurance companies.
 			He was admitted as a Legal Practitioner enrolled as an Attorney of the High Court South
 			Africa on the 12 March 2020. His insurance experience and expertise could be put to better
 			use in insurance law and related matters. Hence, the need established a niche and
@@ -207,34 +220,37 @@ and Copy Right. Small firm and “fit for purpose”.</p>
     	</div>
 
     	<div class="main">
+    		<div>
+    		<h2 style="font-size: 20px;">WELCOME TO MAREMANE ATTORNEYS</h2>
+    		<p style="color: #717D7E">
+    			At Maremane Attorneys we place a high value on providing personal and business legal<br> services matched with outstanding practical solutions to our clients. Through the cultivation<br> of a stellar reputation, our leading approaches and strategies have been geared towards<br> success within the most complex legal territories.</p>
+
+				<p style="color: #717D7E">Our foundation is highly enforced through the ideals of integrity, honesty and unique<br> customer service. We rely on our proven skills to satisfy the demand for efficient and<br> outstanding legal services. We believe the law should serve every individual, and we strive<br> to make it more accessible.
+    		</p>
+    	    </div>
+    	    <div style="background-color: ">
     		<h2>Services</h2>
-    		<p>Maremane Attorneys practice and focus are on:
-<ul>
-	 <li><b>General Insurance law and related liabilities</b> <br><i>medical, pensions, marine, engineering
-	 and construction, public</i></li>
-	 <li> <b>International Transport Law</b> <br><i>Marine and Civil Aviation law, insurance, shipping and
-	 related recoveries</i></li>
-	 <li><b>Administration of Estates & Family Law.</b></li>
-	 <li><b>Contracts</b></li>
-	 <li><b>Civil Litigation.</b></li>
-	 <li> <b>Debt Collections.</b></li>
-	 <li><b> Employment and Labour Law.</b></li>
-	 <li><b> Intellectual Property and Copyright</b></li>
- </ul>
-Our focus will be on personal and commercial clients at competitive and affordable rates.</p>
-    	</div>
-    </div>
+		    		<p>Maremane Attorneys practice and focus are on:
+				<ul>
+					 <li><b>General Insurance law and related liabilities</b> <br><i>medical, pensions, marine, engineering
+					 and construction, public</i></li>
+					 <li> <b>International Transport Law</b> <br><i>Marine and Civil Aviation law, insurance, shipping and
+					 related recoveries</i></li>
+					 <li><b>Administration of Estates & Family Law.</b></li>
+					 <li><b>Contracts</b></li>
+					 <li><b>Civil Litigation.</b></li>
+					 <li> <b>Debt Collections.</b></li>
+					 <li><b> Employment and Labour Law.</b></li>
+					 <li><b> Intellectual Property and Copyright</b></li>
+				 </ul>
+				Our focus will be on personal and commercial clients at competitive and affordable rates.</p>
+		    </div>
 
-    <!--YT Video  -->
-    <iframe width="800" height="615"
-src="https://www.youtube.com/watch?v=MeiVQgQRO0I" align="center">
-</iframe>
-
-<!-- contact Us -->
- <div class="container">
+	<!-- contact us -->
+	<div class="container">
   <div style="text-align:center">
     <h2>Contact Us</h2>
-    <p>Leave us a message:</p>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
   </div>
   <div class="row">
     <div class="column">
@@ -242,15 +258,15 @@ src="https://www.youtube.com/watch?v=MeiVQgQRO0I" align="center">
     </div>
     <div class="column">
       <form action="/action_page.php">
-        <label for="fname">Name (required)</label>
-        <input type="text" id="name" name="your-name" placeholder="Your name..">
-        <label for="Your Email">Your Email (required)</label>
-        <input type="text" id="your email address" name="your email address" placeholder="Your Email Address">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="Johannesburg">Johannesburg</option>
-          <option value="Pretoria">Pretoria</option>
-          <option value="Ekurhuleni">Ekurhuleni</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
         </select>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
@@ -260,21 +276,63 @@ src="https://www.youtube.com/watch?v=MeiVQgQRO0I" align="center">
   </div>
 </div>
 
-<!-- footer -->
+	<!-- google maps -->
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="460" height="187" id="gmap_canvas" src="https://maps.google.com/maps?q=16%20STINT%20PLACE%20BISHOPS%20COURT%20ESTATE%20VAN%20RIBEECK%20PARK%20EXT%2024%201619%20KEMPTON%20PARK&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org">7.thepiratebay</a></div><style>.mapouter{position:relative;text-align:right;height:187px;width:460px;}.gmap_canvas {overflow:hidden;background:none!important;height:187px;width:460px;}</style></div>
+    	</div>
+    </div>
+
     <div class="footer">
-    	<div class="column">
-    	<h6></h6>
-    	<p style="font-size: 10px";>IN ASSOCIATION WITH
-		PHUKUBYE ATTORNEYS<br>
-		335 BEHRENS ROAD<br>
-		CAPITAL PARK<br>
-		PRETORIA<br>
-		Tel: 012 323 0284</p>
+    	<div class="row">
+		  <div class="column">
+		  	<p style="text-align: center;">&#10095; IN ASSOCIATION WITH<br>
+			   PHUKUBYE ATTORNEYS<br>
+			   335 BEHRENS ROAD<br>
+			   CAPITAL PARK<br>
+			   PRETORIA<br>
+			   Tel: 012 323 0284
+		    </p>
+		  </div>
+
+		  <hr>
+
+		  <div class="column" style="text-align: center;">
+		  	<h6><u>Pages</u></h6>
+		  	<p>
+		  		<ul>
+		  			<li>Serives</li>
+		  			<li>Our Team</li>
+		  			<li></li>
+
+		  		</ul>
+		  	</p>
+		  </div>
+
+		  <hr>
+
+	  	  <div class="column">
+	  	  	<h5><b><u>Get In Touch</u></b></h5>
+	  	  	<p>&#10095; Mob: +27 83 784 0391</p>
+	  	  	<p>&#10095; maremanempho16@gmail.com</p>
+	  	  	<p></p>
+	  	  	<p> &#10095; 16 STINT PLACE<br>
+			   BISHOPS COURT ESTATE<br>
+			   VAN RIBEECK PARK EXT 24<br>
+			   1619<br>
+			   KEMPTON PARK</p>
+	  	  	<p>&#10095; Mon to Fri - 7:00am to 4:00pm<br>
+			   (Saturday & Sunday Closed)</p>
+	  	  </div>
+
+	  	  <hr>
+
+	  	  <div class="column">
+	  	  	
+	  	  </div>
 		</div>
+
 		<hr>
 
-		<p> &copy;Neo Rathokolo </p>
-		
+        <h6 style="text-align: center;"> copyright&copy; 2020 Maremane Attorneys. All rights reserved.</h6>
     </div>
 
     <script type="text/javascript">
