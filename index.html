@@ -85,6 +85,62 @@ body {
 		flex-direction: column;
 	}
 
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 .footer{
 	padding: 20px;
 	text-align: center;
@@ -99,7 +155,7 @@ body {
 		<!-- header element -->
     <div class="header">
     <h1>Maremane Attorneys</h1>
-    <p>A website created by me.</p>
+    <p>“SMALL FIRM AND FIT FOR PURPOSE”</p>
     </div>
 
 <!-- Tab links -->
@@ -125,7 +181,9 @@ and Copy Right. Small firm and “fit for purpose”.</p>
 
 <div id="Contact Us" class="tabcontent">
   <h3>Contact Us</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <p>Contact Details: Mpho Maremane<br>
+	Mobile:+27 83 784 0391<br>
+	EMAIL:maremanempho16@gmail.com</p>
 </div>
 
 	<!-- slideshow -->
@@ -138,10 +196,10 @@ and Copy Right. Small firm and “fit for purpose”.</p>
     <!-- The Content -->
     <div class="row">
     	<div class="side">
-    		<img src="img_MphoMaremane.jpg">
+    		<img src="img_MphoMaremane.jpg" style="width: 100%">
     		<h2><b>Founder And Manager</b></h2>
     		<p>Mpho has served the insurance and financial services industry for a period of over 24 years.
-			He held positions in Commercial and Marine Claims at leading insurance companies.
+			He held positions in Commercial and Marine Claims at leading insurance companies.<br>
 			He was admitted as a Legal Practitioner enrolled as an Attorney of the High Court South
 			Africa on the 12 March 2020. His insurance experience and expertise could be put to better
 			use in insurance law and related matters. Hence, the need established a niche and
@@ -166,7 +224,37 @@ and Copy Right. Small firm and “fit for purpose”.</p>
 Our focus will be on personal and commercial clients at competitive and affordable rates.</p>
     	</div>
     </div>
+<!-- contact Us -->
+ <div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/w3images/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Johannesburg">Johannesburg</option>
+          <option value="Pretoria">Pretoria</option>
+          <option value="Ekurhuleni">Ekurhuleni</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
 
+<!-- footer -->
     <div class="footer">
     	<h6></h6>
     	<p style="font-size: 10px";>IN ASSOCIATION WITH
@@ -175,6 +263,7 @@ Our focus will be on personal and commercial clients at competitive and affordab
 		CAPITAL PARK<br>
 		PRETORIA<br>
 		Tel: 012 323 0284</p>
+		<p> &copy;Neo Rathokolo </p>
     </div>
 
     <script type="text/javascript">
