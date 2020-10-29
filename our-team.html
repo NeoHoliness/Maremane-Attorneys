@@ -16,7 +16,6 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50% -50%);
-			font-family: 'Roboto', sans-serif;
 			font-size: 43px;
 			color: White;
 			background-color:rgba(0, 0, 0, 0.5);
@@ -50,7 +49,9 @@
 
 		.column{
 			float: left;
-			width: 33.33%;
+			width: 40%;
+			margin-top: 2px;
+			padding: 10px
 		}
 
 		/* Add a black background color to the top navigation */
@@ -73,6 +74,15 @@
 		.topnav a:hover{
 			background-color: #ddd;
 			color: black;
+		}
+
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .column, input[type=submit] {
+		    width: 100%;
+		    margin-top: 0;
+		  }
 		}
 
 	</style>
